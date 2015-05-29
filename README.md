@@ -19,3 +19,9 @@ var nodes = graph.DFS(["A"]);
 
 var topologicallySorted = nodes.reverse();
 ```
+
+## Running Unit Tests
+
+```bash
+mocha
+```
