@@ -32,3 +32,7 @@ make test
 # build UMD module and minified distribution
 make
 ```
+
+The choice of build tools for this project is inspired by [d3-selection](https://github.com/d3/d3-selection). The main difference is that this is using [Mocha](http://mochajs.org/) for testing. I found that Mocha has a better debugging experience than [Tape](https://npmjs.org/package/tape), which is used by d3-selection. This is because Tape spits out the TAP protocol to stdout, so `console.log` messages need to produce TAP statemets like `# everything is fine` in order to show up in the [faucet](https://www.npmjs.com/package/faucet) output, so you cannot use nice Node.js things like `console.log(array)` or `console.log(object)` within tape, whereas these things work when using Mocha.
+
+Curran Kelleher May 2015
