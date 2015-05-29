@@ -23,8 +23,10 @@
   },
   "homepage": "https://github.com/curran/graph#readme",
   "devDependencies": {
+    "esperanto": "^0.7.1",
     "mocha": "^2.2.5",
     "systemjs": "^0.16.11",
-    "traceur": "0.0.89"
+    "traceur": "0.0.89",
+    "uglifyjs": "^2.4.10"
   }
 }

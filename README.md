@@ -23,5 +23,11 @@ var topologicallySorted = nodes.reverse();
 ## Running Unit Tests
 
 ```bash
-mocha
+make test
+```
+
+## Building UMD module and minified distribution
+
+```bash
+make
 ```

@@ -6,7 +6,7 @@ describe("Graph", function (){
   // Load the graph.js ES6 module via SystemJS.
   var Graph;
   beforeEach(function (done){
-    System.import("./graph").then(function (_) {
+    System.import("src/graph").then(function (_) {
       Graph = _.Graph;
       done();
     });
