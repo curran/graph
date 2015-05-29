@@ -1,16 +1,7 @@
-var System = require("systemjs");
+var Graph = require("../dist/graph").Graph;
 var assert = require("assert");
 
 describe("Graph", function (){
-
-  // Load the graph.js ES6 module via SystemJS.
-  var Graph;
-  beforeEach(function (done){
-    System.import("src/graph").then(function (_) {
-      Graph = _.Graph;
-      done();
-    });
-  });
 
   it("should be a function", function (){
     assert(typeof Graph === "function");
