@@ -1,4 +1,4 @@
-# graph
+# graph.js
 
 A graph data structure implementation with depth first search.
 
@@ -20,14 +20,15 @@ var nodes = graph.DFS(["A"]);
 var topologicallySorted = nodes.reverse();
 ```
 
-## Installing Node.js Dependencies
+## Development
 
-`npm install`
+```bash
+# install dependencies
+npm install
 
-## Running Unit Tests
+# run unit tests
+make test
 
-`make test`
-
-## Building UMD module and minified distribution
-
-`make`
+# build UMD module and minified distribution
+make
+```
