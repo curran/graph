@@ -5,7 +5,7 @@ export function Graph(){
   // Values are arrays of adjacent node ids.
   var edges = {};
   
-  // Gets or creates the adjavent node list for node u.
+  // Gets or creates the adjacent node list for node u.
   function adjacent(u){
     return edges[u] || (edges[u] = []);
   }
