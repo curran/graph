@@ -6,44 +6,40 @@
 
   exports.Graph = Graph;
 
+  // This is an ES6 module.
   function Graph(){
     
     // Keys are node ids.
     // Values are arrays of adjacent node ids.
     var edges = {};
     
+    // Gets or creates the adjavent node list for node u.
     function adjacent(u){
       return edges[u] || (edges[u] = []);
     }
     
     return {
 
+      adjacent: adjacent,
+
       addEdge: function (u, v){
         adjacent(u).push(v);
       },
-      removeEdge: function (u, v){ /* TODO */ },
-      removeNode: function (u){ /* TODO */ },
 
-      adjacent: adjacent,
-
+      // Depth First Search algorithm, inspired by
+      // Cormen et al. "Introduction to Algorithms" 3rd Ed. p. 604
       DFS: function (originNodes){
 
-        // Keys are node ids.
-        // Values are true when the node has been visited.
         var visited = {};
-        
-        // An array of nodes containing the result of DFS().
         var nodes = [];
 
-        function DFSVisit(u){
+        originNodes.forEach(function DFSVisit(u){
           if(!visited[u]){
             visited[u] = true;
             adjacent(u).forEach(DFSVisit);
             nodes.push(u);
           }
-        }
-    
-        originNodes.forEach(DFSVisit);
+        });
 
         return nodes;
       }

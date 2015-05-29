@@ -2,7 +2,7 @@
   "name": "graph",
   "version": "1.0.0",
   "description": "A small graph implementation with depth first search.",
-  "main": "graph.js",
+  "main": "dist/graph.js",
   "directories": {
     "test": "test"
   },

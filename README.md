@@ -1,6 +1,6 @@
 # graph
 
-A graph implementation with depth first search.
+A graph data structure implementation with depth first search.
 
 ## Usage
 
@@ -20,14 +20,14 @@ var nodes = graph.DFS(["A"]);
 var topologicallySorted = nodes.reverse();
 ```
 
+## Installing Node.js Dependencies
+
+`npm install`
+
 ## Running Unit Tests
 
-```bash
-make test
-```
+`make test`
 
 ## Building UMD module and minified distribution
 
-```bash
-make
-```
+`make`
