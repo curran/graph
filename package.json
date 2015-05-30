@@ -1,7 +1,7 @@
 {
   "name": "graph",
-  "version": "0.0.1",
-  "description": "A small graph implementation with depth first search.",
+  "version": "0.0.2",
+  "description": "A graph implementation with depth first search.",
   "main": "dist/graph.js",
   "directories": {
     "test": "test",
