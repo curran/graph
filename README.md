@@ -2,8 +2,6 @@
 
 A graph data structure implementation with depth first search. Nodes are identified by strings, and edges are stored internally using an adjacency list representation (the `edges` variable in the `Graph` constructor function closure).
 
-`graph.DFS(sourceNodes)` is invoked with an array of source nodes, and returns an array of nodes visited by the algori
-
 ## Usage
 
 ```javascript
