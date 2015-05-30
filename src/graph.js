@@ -1,6 +1,9 @@
 // This is an ES6 module.
+// This exported function provides a constructor for graph instances.
+// Usage `var graph = Graph();` or (optionally) `var graph = new Graph();`
 export function Graph(){
   
+  // The adjacency list of the graph.
   // Keys are node ids.
   // Values are arrays of adjacent node ids.
   var edges = {};
@@ -20,16 +23,16 @@ export function Graph(){
 
     // Depth First Search algorithm, inspired by
     // Cormen et al. "Introduction to Algorithms" 3rd Ed. p. 604
-    DFS: function (originNodes){
+    DFS: function (sourceNodes){
 
       var visited = {};
       var nodes = [];
 
-      originNodes.forEach(function DFSVisit(u){
-        if(!visited[u]){
-          visited[u] = true;
-          adjacent(u).forEach(DFSVisit);
-          nodes.push(u);
+      sourceNodes.forEach(function DFSVisit(node){
+        if(!visited[node]){
+          visited[node] = true;
+          adjacent(node).forEach(DFSVisit);
+          nodes.push(node);
         }
       });
 
