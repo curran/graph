@@ -1,6 +1,6 @@
 {
   "name": "graph",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A graph implementation with depth first search.",
   "main": "dist/graph.js",
   "directories": {
@@ -29,7 +29,10 @@
     "uglifyjs": "^2.4.10"
   },
   "jspm": {
-    "main": "src/graph",
+    "directories": {
+      "lib": "src"
+    },
+    "main": "graph",
     "format": "es6"
   }
 }
