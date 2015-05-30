@@ -1,17 +1,24 @@
 # graph.js
 
-A graph data structure implementation with depth first search.
+A graph data structure implementation with depth first search. In this library, a graph is represented where nodes are identified by strings, and edges are stored internally using an adjacency list representation (the `edges` variable in the `Graph` constructor function closure).
+
+Depth first search, in this library `graph.DFS(sourceNodes)`, is invoked with an array of source nodes.
 
 ## Usage
 
 ```javascript
+// Create an empty graph with no nodes or edges.
 var graph = Graph();
 
+// Add edges. Nodes are added implicitly.
 graph.addEdge("A", "B");
 graph.addEdge("B", "C");
 
+// graph.adjacent(nodeId) returns an array of adjacent nodes.
+// For each node in 
 // prints ["B"]
-console.log(graph.adjacent("A"))
+var adjacentNodes = graph.adjacent("A");
+console.log();
 
 // Perform Depth First Search (DFS)
 // nodes = ["C", "B", "A"]
