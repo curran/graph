@@ -4,7 +4,8 @@
   "description": "A small graph implementation with depth first search.",
   "main": "dist/graph.js",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "packages": "jspm_packages"
   },
   "scripts": {
     "test": "mocha"
@@ -26,5 +27,9 @@
     "esperanto": "^0.7.1",
     "mocha": "^2.2.5",
     "uglifyjs": "^2.4.10"
+  },
+  "jspm": {
+    "main": "src/graph",
+    "format": "es6"
   }
 }
