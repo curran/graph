@@ -13,9 +13,9 @@ graph.addEdge("A", "B");
 graph.addEdge("B", "C");
 
 // graph.adjacent(nodeId) returns an array of adjacent nodes.
-// For each node in 
-// prints ["B"]
 var adjacentNodes = graph.adjacent("A");
+
+// prints ["B"]
 console.log(adjacentNodes);
 
 // Perform Depth First Search (DFS) starting at node A.
